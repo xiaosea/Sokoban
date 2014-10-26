@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+  
+  <item android:id="@+id/MENU_ITEM_UNDO"
+        android:visible="true" android:title="@string/UNDO_BUTTON_CAPTION" android:icon="@drawable/ic_menu_undo"></item>
+  <item android:id="@+id/MENU_ITEM_RESTART"
+        android:title="@string/MENU_ITEM_RESTART_CAPTION" android:visible="true" android:icon="@drawable/ic_menu_restart"></item>
+  <item android:id="@+id/MENU_ITEM_CHANGE_LEVEL" android:title="@string/MENU_ITEM_CHANGE_LEVEL_CAPTION" android:icon="@drawable/ic_menu_select">
+  <menu>
+    <item android:id="@+id/MENU_ITEM_NEXT" android:title="@string/MENU_ITEM_NEXT_CAPTION" android:visible="true" />
+    <item android:id="@+id/MENU_ITEM_PREV" android:title="@string/MENU_ITEM_PREV_CAPTION" android:visible="true" />
+    <item android:id="@+id/MENU_ITEM_SELECT_LEVEL" android:title="@string/MENU_ITEM_SELECT_LEVEL_CAPTION" android:visible="true" />
+  </menu>
+  </item>
+  <item android:id="@+id/MENU_ITEM_SETUP"
+        android:title="@string/MENU_ITEM_SETUP_CAPTION" android:visible="true" android:icon="@drawable/ic_menu_settings"/>
+  <item android:id="@+id/MENU_ITEM_HELP"
+        android:title="@string/MENU_ITEM_HELP_CAPTION" android:visible="true" android:icon="@drawable/ic_menu_help"/>
+  <item android:id="@+id/MENU_ITEM_EXIT"
+        android:title="@string/MENU_ITEM_EXIT_CAPTION" android:visible="true" android:icon="@drawable/ic_menu_exit"/>
+</menu>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="@string/PREF_MAIN_PAGE_TITLE" >
+
+    <PreferenceCategory
+        android:summary="@string/PREF_GROUP_BUTTONS_SUMMARY"
+        android:title="@string/PREF_GROUP_BUTTONS_TITLE" >
+        <CheckBoxPreference
+            android:key="@string/PREF_SOUND_KEY"
+            android:title="@string/PREF_SHOW_GAME_SOUND_TITLE"
+            android:defaultValue="true" >
+        </CheckBoxPreference>
+        <CheckBoxPreference
+            android:key="@string/PREF_SHOW_NAV_BUTTONS_KEY"
+            android:summary="@string/PREF_SHOW_NAV_BUTTONS_SUMMARY"
+            android:title="@string/PREF_SHOW_NAV_BUTTONS_TITLE" >
+        </CheckBoxPreference>
+        <CheckBoxPreference
+            android:key="@string/PREF_SHOW_UNDO_BUTTON_KEY"
+            android:summary="@string/PREF_SHOW_UNDO_BUTTON_SUMMARY"
+            android:title="@string/PREF_SHOW_UNDO_BUTTON_TITLE" >
+        </CheckBoxPreference>
+    </PreferenceCategory>
+
+</PreferenceScreen>

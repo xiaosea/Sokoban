@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- This file contains constants which are shared between several application
+     components. It is used internally, and no internationalization 
+     is needed.-->
+
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <!-- The URL of the 'about' page -->
+    <string name="HELP_URL">
+        android.resource://com.dio.sokoban/raw/helpindex
+    </string>
+
+    <!-- Keys for the preference attributes -->
+    <string name="PREF_SOUND_KEY">PREF_SOUND_KEY</string>
+    <string name="PREF_SHOW_UNDO_BUTTON_KEY">PREF_SHOW_UNDO_BUTTON_KEY</string>
+    <string name="PREF_SHOW_NAV_BUTTONS_KEY">PREF_SHOW_NAV_BUTTONS_KEY</string>
+
+    <!-- The number of levels in the level database -->
+    <item name="NUM_LEVELS" type="integer" format="integer">550</item>
+
+    <!-- The levels cause StackOverFlowException -->
+    <item name="INVAL_LEVELS" type="string" format="string">149,250,299,300,347,400,450,497,500,548</item>
+
+    <!-- The default value of the trackball press preference -->
+    <item name="PREF_SHOW_NAV_BUTTONS_DEF_VALUE" type="bool" format="boolean">
+    true
+    </item>
+
+    <item name="NUM_COLUMNS_GRID_VIEW" type="integer" format="integer">5</item>
+    
+</resources>

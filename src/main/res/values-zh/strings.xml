@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This file contains application user messages and strings, and should
+     be internationalized if this ever is translated. -->
+<resources>
+    <string name="APP_NAME">推箱子</string>
+    <string name="exit_press_back_twice_message">再按一次退出程序</string>
+
+    <!-- Buttons, captions, etc. -->
+    <string name="OK_BUTTON_CAPTION">确定</string>
+    <string name="CANCEL_BUTTON_CAPTION">取消</string>
+    <string name="UNDO_BUTTON_CAPTION">撤消</string>
+    <string name="LEVEL_TEXT">当前: 第 %1$d 关，步数: 第 %2$d 步</string>
+
+    <!-- Dialogs -->
+    <string name="SELECT_LEVEL_DIALOG_TITLE">选关</string>
+
+    <!-- Menu items -->
+    <string name="MENU_ITEM_NEXT_CAPTION">下一关</string>
+    <string name="MENU_ITEM_PREV_CAPTION">上一关</string>
+    <string name="MENU_ITEM_SELECT_LEVEL_CAPTION">选择&#8230;</string>
+    <string name="MENU_ITEM_RESTART_CAPTION">重玩</string>
+    <string name="MENU_ITEM_SETUP_CAPTION">设置</string>
+    <string name="MENU_ITEM_CHANGE_LEVEL_CAPTION">选关</string>
+    <string name="MENU_ITEM_HELP_CAPTION">帮助</string>
+    <string name="MENU_ITEM_EXIT_CAPTION">退出</string>
+
+
+    <!--  Errors, etc. -->
+    <string name="ERR_LEVEL_LOAD">无法加载关卡 %s</string>
+    <string name="ERR_BAD_LEVEL_SELECTED">无效关卡，关卡名字必须在1~%d</string>
+
+    <!--  Strictly speaking, I think HTML is not allowed here, and we need
+    to escape it. But it works, and is much more readable this way -->
+    <string name="ERR_URL_LOAD">
+        <html>
+            <head> </head>
+            <body>
+                	对不起，加载 %s 失败
+            </body>
+        </html>
+    </string>
+
+    <!-- Preference page titles and summaries -->
+    <string name="PREF_GROUP_BUTTONS_TITLE">触摸屏按钮</string>
+    <string name="PREF_GROUP_BUTTONS_SUMMARY">选择显示的触摸屏按钮</string>
+    <string name="PREF_MAIN_PAGE_TITLE">Sokoban Game Preferences</string>
+    <string name="PREF_SHOW_NAV_BUTTONS_SUMMARY">
+        	如果选中，则在屏幕上显示导航按钮
+    </string>
+    <string name="PREF_SHOW_NAV_BUTTONS_TITLE">显示导航按钮</string>
+    <string name="PREF_SHOW_GAME_SOUND_TITLE">音效</string>
+
+    <string name="PREF_SHOW_UNDO_BUTTON_SUMMARY">
+			如果选中，则在屏幕上显示撤消按钮
+    </string>
+    <string name="PREF_SHOW_UNDO_BUTTON_TITLE">显示撤消按钮</string>
+
+
+</resources>

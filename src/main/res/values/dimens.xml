@@ -1,0 +1,5 @@
+<resources>
+
+    <dimen name="grid_view_spacing">1dp</dimen>
+
+</resources>

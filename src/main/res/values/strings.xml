@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This file contains application user messages and strings, and should
+     be internationalized if this ever is translated. -->
+<resources>
+    <string name="APP_NAME">Sokoban</string>
+    <string name="exit_press_back_twice_message">Please click BACK again to exit</string>
+
+    <!-- Buttons, captions, etc. -->
+    <string name="OK_BUTTON_CAPTION">OK</string>
+    <string name="CANCEL_BUTTON_CAPTION">Cancel</string>
+    <string name="UNDO_BUTTON_CAPTION">Undo</string>
+    <string name="LEVEL_TEXT">Level: %1$d,Step: %2$d</string>
+
+    <!-- Dialogs -->
+    <string name="SELECT_LEVEL_DIALOG_TITLE">Select Level</string>
+
+    <!-- Menu items -->
+    <string name="MENU_ITEM_NEXT_CAPTION">Next Level</string>
+    <string name="MENU_ITEM_PREV_CAPTION">Prev Level</string>
+    <string name="MENU_ITEM_SELECT_LEVEL_CAPTION">Select&#8230;</string>
+    <string name="MENU_ITEM_RESTART_CAPTION">Restart Level</string>
+    <string name="MENU_ITEM_SETUP_CAPTION">Preferences&#8230;</string>
+    <string name="MENU_ITEM_CHANGE_LEVEL_CAPTION">Change Level&#8230;</string>
+    <string name="MENU_ITEM_HELP_CAPTION">Help&#8230;</string>
+    <string name="MENU_ITEM_EXIT_CAPTION">Exit</string>
+
+
+    <!--  Errors, etc. -->
+    <string name="ERR_LEVEL_LOAD">Couldn\'t read level %s</string>
+    <string name="ERR_BAD_LEVEL_SELECTED">Invalid levels. Level values should be
+    between 1 and %d</string>
+
+    <!--  Strictly speaking, I think HTML is not allowed here, and we need
+    to escape it. But it works, and is much more readable this way -->
+    <string name="ERR_URL_LOAD">
+        <html>
+            <head> </head>
+            <body>
+                A problem occurred while trying to load %s. Sorry.
+            </body>
+        </html>
+    </string>
+
+    <!-- Preference page titles and summaries -->
+    <string name="PREF_GROUP_BUTTONS_TITLE">Touchscreen Buttons</string>
+    <string name="PREF_GROUP_BUTTONS_SUMMARY">
+    Select which touchscreen buttons to show.</string>
+    <string name="PREF_MAIN_PAGE_TITLE">Sokoban Game Preferences</string>
+    <string name="PREF_SHOW_NAV_BUTTONS_SUMMARY">
+    If checked, show navigation buttons on screen (useful for touch screen only)
+    </string>
+    <string name="PREF_SHOW_NAV_BUTTONS_TITLE">Show Navigation Buttons</string>
+    <string name="PREF_SHOW_GAME_SOUND_TITLE">Sound</string>
+
+    <string name="PREF_SHOW_UNDO_BUTTON_SUMMARY">
+    If checked, show undo button on screen (useful for touch screen only)
+    </string>
+    <string name="PREF_SHOW_UNDO_BUTTON_TITLE">Show Undo Button</string>
+
+
+</resources>

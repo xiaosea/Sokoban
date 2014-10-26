@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/repeat_bg"
+    android:orientation="horizontal"
+    android:id="@+id/master_layout"
+    android:baselineAligned="false">
+
+  <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:layout_weight="1">
+    
+  <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:id="@+id/gameview_and_status_layout"
+  >
+
+    <TextView
+        android:id="@+id/status_view"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:focusable="false"
+	    android:textColor="#ff000000"
+	    android:text="blah"
+	    android:layout_marginLeft="2dip"
+	/>
+
+    <com.dio.sokoban.SokoView
+	    android:id="@+id/game_view"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:focusable="true"
+    />
+
+  </LinearLayout> <!-- gameview_and_status_layout -->
+  </LinearLayout>
+
+  <LinearLayout
+    android:id="@+id/button_container_view"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:layout_weight="0"
+    android:gravity="center"
+    >
+
+    <!-- There's a trick here - we actually have two similar undo buttons,
+    but at most one is visible at any time. See the code for SokoGameActivity
+    for details. -->
+    <ImageButton
+        android:id="@+id/standalone_undo_button"
+        android:focusable="false"
+        android:layout_width="60dip"
+        android:layout_height="60dip"
+        android:layout_marginRight="40dip"
+        android:layout_marginLeft="16dip"
+    	android:background="@drawable/btn_revert"
+    />
+
+    <TableLayout
+        android:id="@+id/nav_button_view"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:focusable="false"
+	    android:layout_marginRight="16dip"
+        android:layout_marginLeft="8dip"
+    >
+
+	    <TableRow
+	       android:layout_marginBottom="8dip"
+	    >
+	        <ImageButton
+	            android:id="@+id/up_button"
+	            android:layout_column="1"
+	            android:focusable="false"
+	            android:layout_width="60dip"
+	            android:layout_height="60dip"
+    			android:background="@drawable/btn_uparrow"
+	        />
+	    </TableRow>
+
+	    <TableRow
+	       android:layout_marginBottom="8dip"
+	    >
+	        <ImageButton
+	            android:id="@+id/left_button"
+	            android:layout_column="0"
+	            android:focusable="false"
+	            android:layout_width="60dip"
+	            android:layout_height="60dip"
+	            android:layout_marginRight="8dip"
+    			android:background="@drawable/btn_leftarrow"
+	        />
+
+            <ImageButton
+                android:id="@+id/nav_undo_button"
+                android:focusable="false"
+                android:layout_width="60dip"
+                android:layout_height="60dip"
+    			android:background="@drawable/btn_revert"
+            />
+
+	        <ImageButton
+	            android:id="@+id/right_button"
+	            android:layout_column="2"
+	            android:focusable="false"
+	            android:layout_width="60dip"
+	            android:layout_height="60dip"
+                android:layout_marginLeft="8dip"
+    			android:background="@drawable/btn_rightarrow"
+	        />
+	    </TableRow>
+
+	    <TableRow>
+	        <ImageButton
+	            android:id="@+id/down_button"
+	            android:layout_column="1"
+	            android:focusable="false"
+	            android:layout_width="60dip"
+	            android:layout_height="60dip"
+    			android:background="@drawable/btn_downarrow"
+	        />
+	    </TableRow>
+    </TableLayout> <!-- nav_button_view -->
+  </LinearLayout> <!-- button_container_view -->
+
+</LinearLayout>
